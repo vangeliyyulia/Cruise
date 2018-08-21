@@ -1,0 +1,8 @@
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-background);
+    padding: 1.5rem 5rem;
+}

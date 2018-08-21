@@ -1,0 +1,14 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+
+    & ul {
+        list-style: none;
+    }
+
+    &__user-list {
+        display: flex;
+    }
+}

@@ -1,0 +1,14 @@
+.header {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+
+    &__phone, &__logo-box, &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

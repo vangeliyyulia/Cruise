@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'RalewayRegular';
+	src: local('RalewayRegular'),
+		   url('../fonts/RalewayRegular/RalewayRegular.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+}
+
+@font-face {
+	font-family: 'RalewayBold';
+	src: local('RalewayBold'),
+		   url('../fonts/RalewayBold/RalewayBold.woff') format('woff');
+	  font-weight: bold;
+	  font-style: bold;
+}
+
+@font-face {
+	font-family: 'RobotoSlab';
+	src: local('RobotoSlab'),
+		   url('../fonts/RobotoSlab/RobotoSlab.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+}
+
+:root {
+	--raleway-regular: 'RalewayRegular', sans-serif;
+	--raleway-bold: 'RalewayBold', sans-serif;
+	--roboto-slab: 'RobotoSlab', sans-serif;
+	--btn-background: hsl(196, 80%, 75%);
+}
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  
+}
+
+body {
+    position: relative;
+	line-height: 1.75;
+	overflow-x: hidden;
+	opacity: 1;
+	font-family: var(--raleway-regular);
+}
+
+.container {
+    width: auto;
+    max-width: 117rem;
+    margin-left: auto;
+	margin-right: auto;
+	padding: 0 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
