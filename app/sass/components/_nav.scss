@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2.5rem;
+    padding-top: 3rem;
+    line-height: 1.5;
 
     & ul {
         list-style: none;
@@ -10,5 +11,59 @@
 
     &__user-list {
         display: flex;
+        margin-left: auto;
+    }
+
+    &__user-item {
+        margin-right: 3.5rem;
+
+        &:last-child a {
+            padding-left: 0;
+
+            &::after {
+                left: 75%;
+            }
+        }
+    }
+
+    &__user-link {
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: var(--default-color);
+        padding: 0 2rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            background: url(../img/triangle.svg) no-repeat center center;
+            top: 35%;
+            left: 95%;
+        }
+
+        &--login,
+        &--currency {
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 1.6rem;
+                height: 1.6rem;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        &--login::before {
+            background: url(../img/user.png) no-repeat center center;
+        }
+
+        &--currency::before {
+            background: url(../img/rouble.png) no-repeat center center;
+        }
     }
 }
+

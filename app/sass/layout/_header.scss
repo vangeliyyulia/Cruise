@@ -11,4 +11,39 @@
         align-items: center;
     }
 
+    &__phone-number {
+        font-family: var(--raleway-bold);
+        font-size: 1.4rem;
+        letter-spacing: .2rem;
+    }
+
+    &__phone-text {
+        font-size: 1rem;
+    }
+
+    &__logo-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    &__heading {
+        &--small {
+            font-size: 3.5rem;
+            letter-spacing: .2rem;
+        }
+
+        &--big {
+            text-transform: uppercase;
+            font-size: 9.5rem;
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__pass-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
