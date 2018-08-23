@@ -5,6 +5,10 @@
     height: 100vh;
     overflow: hidden;
 
+    @include respond(phone) {
+        height: 100%;
+    }
+
     &__phone, &__logo-box, &__heading {
         display: flex;
         flex-direction: column;
@@ -30,21 +34,27 @@
     }
 
     &__heading {
+        text-align: center;
+
         &--small {
             font-size: 3.5rem;
             letter-spacing: .2rem;
+
+            @include respond(phone) {
+                font-size: 2rem;
+                letter-spacing: .1rem;
+            }
         }
 
         &--big {
             text-transform: uppercase;
             font-size: 9.5rem;
             margin-bottom: .5rem;
-        }
-    }
 
-    &__pass-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+            @include respond(phone) {
+                font-size: 6rem;
+                line-height: 1.2;
+            }
+        }
     }
 }
