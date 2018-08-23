@@ -3,6 +3,11 @@
     background-size: cover;
     background-position: center top;
     height: 100vh;
+    overflow: hidden;
+
+    @include respond(phone) {
+        height: 100%;
+    }
 
     &__phone, &__logo-box, &__heading {
         display: flex;
@@ -11,4 +16,45 @@
         align-items: center;
     }
 
+    &__phone-number {
+        font-family: var(--raleway-bold);
+        font-size: 1.4rem;
+        letter-spacing: .2rem;
+    }
+
+    &__phone-text {
+        font-size: 1rem;
+    }
+
+    &__logo-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    &__heading {
+        text-align: center;
+
+        &--small {
+            font-size: 3.5rem;
+            letter-spacing: .2rem;
+
+            @include respond(phone) {
+                font-size: 2rem;
+                letter-spacing: .1rem;
+            }
+        }
+
+        &--big {
+            text-transform: uppercase;
+            font-size: 9.5rem;
+            margin-bottom: .5rem;
+
+            @include respond(phone) {
+                font-size: 6rem;
+                line-height: 1.2;
+            }
+        }
+    }
 }
