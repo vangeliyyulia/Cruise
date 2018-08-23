@@ -3,6 +3,7 @@
     background-size: cover;
     background-position: center top;
     height: 100vh;
+    overflow: hidden;
 
     &__phone, &__logo-box, &__heading {
         display: flex;
