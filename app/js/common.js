@@ -6,6 +6,10 @@ $(function() {
     });
     
   });
+
+  $('button.hamburger').on('click', function() {
+		$(this).toggleClass('is-active');
+	});
  
   // Toggle with hitting of ESC
   $(document).keyup(function(e) {

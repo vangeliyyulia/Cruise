@@ -23,6 +23,10 @@
   overflow: visible; }
   .hamburger:hover {
     opacity: 0.7; }
+    .hamburger:focus,
+    .hamburger:active {
+      outline: none;
+    }
 
 .hamburger-box {
   width: 25px;
@@ -47,7 +51,7 @@
     content: "";
     display: block; }
   .hamburger-inner::before {
-    top: 5px; }
+    top: -10px; }
   .hamburger-inner::after {
     top: -5px; }
 
@@ -208,7 +212,7 @@
    */
 .hamburger--collapse .hamburger-inner {
   top: auto;
-  bottom: 10px;
+  bottom: 0;
   transition-duration: 0.15s;
   transition-delay: 0.15s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
