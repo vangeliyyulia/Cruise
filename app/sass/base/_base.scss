@@ -17,7 +17,7 @@
 @font-face {
 	font-family: 'RobotoSlab';
 	src: local('RobotoSlab'),
-		   url('../fonts/RobotoSlab/RobotoSlab.woff') format('woff');
+		   url('../fonts/RobotoSlab/RobotoSlabRegular.woff') format('woff');
 	  font-weight: normal;
 	  font-style: normal;
 }
@@ -25,7 +25,7 @@
 :root {
 	--raleway-regular: 'RalewayRegular', sans-serif;
 	--raleway-bold: 'RalewayBold', sans-serif;
-	--roboto-slab: 'RobotoSlab', sans-serif;
+	--roboto-slab: 'RobotoSlab', serif;
 	--btn-background: hsl(196, 80%, 75%);
 	--btn-hover: hsl(196, 74%, 64%);
 	--defaul-color: hsl(206, 84%, 20%);
@@ -46,7 +46,7 @@ html {
 
 body {
     position: relative;
-	line-height: 1.75;
+	line-height: 1;
 	overflow-x: hidden;
 	opacity: 1;
 	font-family: var(--raleway-regular);

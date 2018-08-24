@@ -121,21 +121,6 @@
     transform: translate(0, 0);
     transform: translate3d(0, 0, 0);
     position: relative;
-
-    &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 100px;
-        height: 300px;
-        background: url(../img/track.png) no-repeat center center;
-        top: 39%;
-        left: 47%;
-
-        @include respond(tab-port) {
-            display: none;
-        }
-    }
 }
 
 .show-nav .push-wrap {
