@@ -8,6 +8,7 @@
         justify-content: center;
         flex-direction: column;
         margin-bottom: 4rem;
+        text-align: center;
     }
     &__heading {
         font-family: var(--roboto-slab);
@@ -39,6 +40,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 3rem;
     }
 
     &__item {
@@ -51,7 +53,7 @@
         flex-direction: column;
 
         & > div {
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
         }
     }
 
@@ -114,7 +116,6 @@
         font-size: 1.7rem;
         letter-spacing: .2rem;
         color: hsl(196%, 100, 62);
-        margin-bottom: 2rem;
     }
 
     &__route, &__duration {
